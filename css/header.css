@@ -1,0 +1,230 @@
+.header {
+  position: relative;
+}
+/*mobile navbar*/
+
+.main-navbar {
+  height: 60px;
+  padding: 2px 0;
+  background-color: var(--navbar-back-color);
+  box-shadow: 0px -10px 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menubar {
+  /*main-menubar */
+  position: absolute;
+  top: 0;
+  background-color: var(--menu-back-color);
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+}
+.logo-link {
+  margin-left: 20px;
+}
+.menu-bar-btn {
+  margin-right: 20px;
+}
+button.menu-close-btn,
+.menu-bar-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main-menubar .top-bar {
+  /*Top bar of main-menubar*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+}
+
+.main-menubar .left-side ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+.main-menubar .left-side ul > li > a {
+  text-decoration: none;
+  color: rgb(46, 46, 46);
+}
+
+/*menu design*/
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  position: relative;
+  margin-top: 1px;
+}
+
+.first-list {
+  margin: 0 !important;
+}
+.menu > li > a {
+  text-decoration: none;
+  display: block;
+  height: 55px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.dropdown-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #00000036;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+}
+.dropdown-btn:active {
+  background-color: #00000083;
+}
+.menu > li button:hover {
+  cursor: pointer;
+}
+.menu a:active {
+  background-color: black;
+}
+.primary-menu > li > a {
+  /*primary menu*/
+  background-color: var(--primary-color);
+  padding: 0 0 0 20px;
+}
+
+.scendary-menu > li > a {
+  /*scendary menu*/
+  background-color: var(--scendary-color);
+  padding: 0 0 0 40px;
+}
+
+.third-menu > li > a {
+  /*scendary menu*/
+  background-color: var(--third-color);
+  padding: 0 0 0 60px;
+}
+
+/*icon hide and show*/
+
+@media (min-width: 576px) {
+  .header {
+    background-color: var(--navbar-back-color);
+    box-shadow: 0px -10px 20px 0px;
+  }
+  /*mobile navbar*/
+  .main-navbar {
+    background-color: initial;
+    box-shadow: initial;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .main-menubar {
+    /*main-menubar */
+    position: initial;
+    background-color: transparent;
+    width: initial;
+    height: initial;
+    display: flex;
+    margin-right: 20px;
+  }
+  .menu-bar-btn {
+    display: none;
+  }
+
+  .main-menubar .top-bar {
+    /*Top bar of main-menubar*/
+    display: none;
+  }
+
+  /*menu design*/
+  .menu li {
+    margin-top: 0px;
+    display: flex;
+    gap: 2px;
+  }
+
+  .menu > li > a {
+    display: inline-block;
+    height: initial;
+    color: rgb(54, 54, 54);
+  }
+  .menu > li > a:hover {
+    color: black;
+  }
+
+  .dropdown-btn {
+    position: initial;
+    background-color: transparent;
+    height: initial;
+    width: initial;
+    display: initial;
+    color: black;
+    padding: 2px 10px 2px 0px;
+  }
+
+  .dropdown-btn i {
+    font-size: 20px;
+  }
+
+  .primary-menu {
+    display: flex;
+    gap: 10px;
+    position: relative;
+  }
+
+  .scendary-menu {
+    position: absolute;
+    top: 40px;
+    z-index: 1000;
+    padding: 0 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 0 #0000002e;
+  }
+
+  .dropdown-btn:active {
+    background-color: transparent;
+  }
+  .menu > li button:hover {
+    cursor: pointer;
+  }
+  .menu a:active {
+    background-color: rgba(0, 0, 0, 0.103);
+  }
+  .primary-menu > li > a {
+    /*primary menu*/
+    background-color: transparent;
+    padding: 5px 3px 5px 10px;
+    border-radius: 5px;
+  }
+
+  .scendary-menu li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+  }
+  .scendary-menu > li > a {
+    /*scendary menu*/
+    background-color: transparent;
+    padding: 5px 0;
+  }
+
+  .third-menu > li > a {
+    /*scendary menu*/
+    background-color: transparent;
+    padding: 5px 0 5px 20px;
+  }
+  /*icon hide and show*/
+}

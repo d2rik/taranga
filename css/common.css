@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #18003f;
+  --scendary-color: #301a59;
+  --third-color: #645482;
+  --navbar-back-color: rgb(224, 224, 224);
+  --menu-back-color: #b8a7d9;
+}
+body {
+  background-color: rgb(192, 192, 192);
+}
+.hide {
+  display: none;
+}
+.show{
+    opacity: 1;
+}

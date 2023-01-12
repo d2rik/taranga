@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <title>Taranga</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-navbar">
+        <a href="/" class="logo-link">
+          <img
+            class="logo"
+            src="./image/logo/logo.png"
+            alt="Taranga_logo"
+            width="45px"
+        /></a>
+        <button class="menu-bar-btn">
+          <i class="fas fa-bars fa-2x"></i>
+        </button>
+        <!--mobile menubar-->
+        <div class="main-menubar hide">
+          <div class="top-bar">
+            <div class="left-side">
+              <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+              </ul>
+            </div>
+            <div class="right-side">
+              <button class="menu-close-btn">
+                <i class="fas fa-times fa-2x"></i>
+              </button>
+            </div>
+          </div>
+          <ul class="menu primary-menu">
+            <li class="first-list"><a href="#">Home</a></li>
+            <li class="articles have-drop">
+              <a href="#">Articles</a>
+              <button class="dropdown-btn" onclick="dropDown('.articles')">
+                <i class="fas fa-angle-down"></i>
+                <i class="fas fa-angle-up hide"></i>
+              </button>
+            </li>
+            <ul class="menu sub-menu scendary-menu hide">
+              <li class="science first-list have-drop">
+                <a href="#">Science</a>
+                <button class="dropdown-btn" onclick="dropDown('.science')">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up hide"></i>
+                </button>
+              </li>
+              <ul class="menu sub-menu third-menu hide">
+                <li class="first-list"><a href="#">Physics</a></li>
+                <li><a href="#">Math</a></li>
+                <li><a href="#">Chemistry</a></li>
+              </ul>
+              <li class="technology have-drop">
+                <a href="#">Technology</a>
+                <button class="dropdown-btn" onclick="dropDown('.technology')">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up hide"></i>
+                </button>
+              </li>
+              <ul class="menu sub-menu third-menu hide">
+                <li class="first-list"><a href="#">Comuter</a></li>
+                <li><a href="#">Power</a></li>
+              </ul>
+              <li><a href="#">Book Review</a></li>
+            </ul>
+            <li class="publications have-drop">
+              <a href="#">Publications</a>
+              <button class="dropdown-btn" onclick="dropDown('.publications')">
+                <i class="fas fa-angle-down"></i>
+                <i class="fas fa-angle-up hide"></i>
+              </button>
+            </li>
+            <ul class="menu sub-menu scendary-menu hide">
+              <li class="science2 first-list have-drop">
+                <a href="#">Science</a>
+                <button class="dropdown-btn" onclick="dropDown('.science2')">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up hide"></i>
+                </button>
+              </li>
+              <ul class="menu sub-menu third-menu hide">
+                <li class="first-list"><a href="#">Physics</a></li>
+                <li><a href="#">Math</a></li>
+                <li><a href="#">Chemistry</a></li>
+              </ul>
+              <li class="technology2 have-drop">
+                <a href="#">Technology</a>
+                <button class="dropdown-btn" onclick="dropDown('.technology2')">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up hide"></i>
+                </button>
+              </li>
+              <ul class="menu sub-menu third-menu hide">
+                <li class="first-list"><a href="#">Comuter</a></li>
+                <li><a href="#">Power</a></li>
+              </ul>
+              <li><a href="#">Book Review</a></li>
+            </ul>
+            <li class="activites have-drop">
+              <a href="#">Activites</a>
+              <button class="dropdown-btn" onclick="dropDown('.activites')">
+                <i class="fas fa-angle-down"></i>
+                <i class="fas fa-angle-up hide"></i>
+              </button>
+            </li>
+            <ul class="menu sub-menu scendary-menu hide">
+              <li class="first-list"><a href="#">Comuter</a></li>
+              <li><a href="#">Power</a></li>
+            </ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="slider">
+      <div class="slider-image">
+        <img
+          class="sliderImg"
+          src="image/slider-image/0.jpg"
+          alt="slider-image"
+        />
+        <img
+          class="sliderImg"
+          src="image/slider-image/1.jpg"
+          alt="slider-image"
+        />
+        <img
+          class="sliderImg"
+          src="image/slider-image/2.jpg"
+          alt="slider-image"
+        />
+        <div class="slider-btn-container">
+          <div class="slider-button">
+            <button class="slider-btn slider-left-btn" onclick="plusDivs(-1)">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-btn slider-right-btn" onclick="plusDivs(1)">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="slider-counter-box">
+          <span class="slider-counter"> </span>
+        </div>
+      </div>
+    </div>
+    <script src="js/javascript.js"></script>
+    <script src="js/slider.js"></script>
+  </body>
+</html>
